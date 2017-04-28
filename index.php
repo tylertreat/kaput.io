@@ -41,6 +41,8 @@
             <h3>Laws of General Systemantics</h3>
             <br>
             <a href="http://bravenewgeek.com">Brave New Geek</a> | <a href="https://twitter.com/tyler_treat">@tyler_treat</a>
+            <br><br>
+            <a href="https://github.com/tylertreat/kaput.io"><img src="img/GitHub-Mark-32px.png" alt="GitHub" /></a>
         </div>
     </header>
 
