@@ -32,12 +32,16 @@
 
     <header id="top" class="header">
         <div class="text-vertical-center">
+            <h1 style="margin-left:5%;margin-right:5%;">
             <?php
                 $phrases_json = file_get_contents("phrases.json");
                 $phrases = json_decode($phrases_json);
                 $phrase = $phrases[array_rand($phrases)];
-                echo "<h1 style=\"margin-left:5%;margin-right:5%;\">$phrase</h1>";
+                $tweet = urlencode(str_replace("'", "\'", $phrase));
+                $url = urlencode("http://kaput.io");
+                echo "$phrase <a href=\"javascript:window.open('https://twitter.com/intent/tweet?text=$tweet&url=$url','Tweet','width=500,height=225')\"><img src=\"img/tweet-32.png\" alt=\"Tweet\" /></a>";
             ?> 
+            </h1>
             <h3>Laws of General Systemantics</h3>
             <br>
             <a href="http://bravenewgeek.com">Brave New Geek</a> | <a href="https://twitter.com/tyler_treat">@tyler_treat</a>
