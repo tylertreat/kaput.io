@@ -162,6 +162,8 @@ hr.small {
     -o-background-size: cover;
 }
 
+@media only screen and (max-width: 640px){ .header { background: none !important; } }
+
 /* About */
 
 .about {
